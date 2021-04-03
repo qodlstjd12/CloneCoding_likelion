@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/9b4609f19f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <h1 class="titlebar">Like Lion</h1>
+    <div class = "nav-bar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Member</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="text-side">
+        <h1>LIKE LION</h1>
+        <p>
+            우리는 '성장 의지를 가진 사람들을 돕기 위해' 존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생각합니다.
+        </p>
+        <p>지금 바로 지원하세요!</p>
+        <div class="img-side">
+            <img src="one.jpg" alt="">
+            <img src="two.jpg" alt="">
+            <img src="three.jpg" alt="">
+            <img src="four.jpg" alt="">
+            <img src="five.jpg" alt="">
+        </div>
+        <input type="button" value="지원하기" onclick="popup();"/>
+    </div>
+
+    <div class="icon-side">
+        <span><i class="fab fa-facebook-f fa-2x"></i></span>
+        <span><i class="fab fa-twitter fa-2x"></i></span>
+        <span><i class="fab fa-instagram fa-2x"></i></span>
+    </div>
+
+    <div id="popup">
+        <div id="popclose">
+            <a id= "close-button" href="#" onclick="popclose();">
+                <span><i class="fas fa-times fa-2x"></i></span>
+            </a>
+        </div>
+        <div class="pop-content">
+            <h1>Welcome</h1>
+            <p>멋쟁이 사자처럼에 지원해 주셔서 감사합니다!</p>
+            <input type="text" class = "text-content" placeholder="Enter Email Address">
+            <input type="button" class = "button-content" value="sumbit">
+        </div>
+    </div>
+</body>
+<script>
+    function popup(){
+        document.getElementById("popup").style.display='inline'
+        document.getElementById("container").style.display = 'block'
+    }
+    function popclose(){
+        document.getElementById("popup").style.display='none'
+        document.getElementById("container").style.display='none';
+    }
+</script>
+</html>
