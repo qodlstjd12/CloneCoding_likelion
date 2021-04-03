@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+}
+.nav-bar h1, ul{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.titlebar{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    left: 5%;
+    margin-top: 10px;
+    font-style: oblique;
+}
+.nav-bar a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    margin-right: 60px;
+}
+li{
+    font-size: 35px;
+    float: right;
+    display: inline;
+    padding: 20px;
+}
