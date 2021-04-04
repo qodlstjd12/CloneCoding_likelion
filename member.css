@@ -1,40 +1,72 @@
-body{
-    margin: 0;
-}
-.nav-bar{
+header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: black;
-}
-.nav-bar h1, ul{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.titlebar{
-    position: absolute;
+    background-color: #000000;
     color: #fff;
-    font-size: 50px;
-    left: 5%;
-    margin-top: 10px;
-    font-style: oblique;
+    font-weight: bolder;
+    height: 120px;
 }
-.nav-bar a{
+.nav-bar{
+    margin-top: 30px;
+}
+.menu-bar{
+    float: right;
+    margin-right: 50px;
+}
+header h1{
+    display: inline;
+    margin: 40px 0 0 100px;
+    font-style: italic;
+    font-size: 50px;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    float: left;
+}
+header a{
     color: #fff;
     text-decoration: none;
-}
-ul{
-    margin-right: 60px;
-}
-li{
     font-size: 35px;
-    float: right;
-    display: inline;
-    padding: 20px;
+    padding-right: 40px;
+}
+
+.intro-member{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+}
+body{
+    margin: 0;
+}
+.member-img{
+    position: relative;
+    margin: auto;
+
+    display: grid;
+
+    max-width: 1200px;
+    max-height: 800px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap:1vmin;
+}
+img{
+    grid-column: span 2;
+    width: 400px;
+    height: 400px;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    vertical-align: middle;
+}
+img:nth-child(2n + 4){
+    grid-column: 2/span 2;
 }

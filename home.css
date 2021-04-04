@@ -6,32 +6,48 @@ body{
     display: none;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 99vh;
     background-color: black;
     opacity: 0.8;
-    margin-top: 67px;
     z-index: 3;
 }
-.titlebar{
-    position: absolute;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
     color: #fff;
-    font-size: 50px;
-    left: 5%;
-    margin-top: 10px;
-    font-style: oblique;
+    font-weight: bolder;
+    height: 120px;
+    z-index: 10;
 }
-ul{
-    margin-right: 100px;
+.nav-bar{
+    margin-top: 30px;
 }
-li{
-    font-size: 30px;
+.menu-bar{
     float: right;
-    display: inline;
-    padding: 20px;
+    margin-right: 50px;
 }
-a{
+header h1{
+    display: inline;
+    margin: 40px 0 0 100px;
+    font-style: italic;
+    font-size: 50px;
+    color: #fff;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    float: left;
+}
+header a{
     color: #fff;
     text-decoration: none;
+    font-size: 35px;
+    padding-right: 40px;
 }
 p, h1{
     color: #fff;
@@ -47,10 +63,10 @@ p{
 .text-side{
     position: relative;
     display: inline-block;
-    width: 600px;
     justify-content: center;
-    left: 100px;
-    margin-top: 25vh;
+    width: 600px;
+    margin-left: 100px;
+    top: 250px;
 }
 .text-side h1{
     color: #fff;
@@ -78,9 +94,9 @@ i{
 }
 .icon-side{
     position: absolute;
-    display: inline-block;
-    top: 130%;
-    left: 5%;
+    display: block;
+    margin-left: 100px;
+    top: 210%;
 }
 #popup{
     display: none;
@@ -88,7 +104,7 @@ i{
     background-color: #fff;
     width: 500px;
     height: 230px;
-    top: 50%;
+    top: 80%;
     left: 40%;
     z-index: 5;
 }
